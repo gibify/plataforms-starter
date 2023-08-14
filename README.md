@@ -120,6 +120,34 @@ This working demo site was built using the Platforms Starter Kit and:
 - [Tremor](https://tremor.so/) for charts
 - [Vercel](http://vercel.com/) for deployment
 
+## The new application has the following structure:
+
+```
+app/
+  api/
+  app/
+    (auth)
+        login/page.tsx
+        layout.tsx
+    (dashboard)
+         post/[id]
+         settings/
+         site/[id]
+         sites/
+         layout.tsx
+         loading.tsx
+         page.tsx
+  home/
+     page.tsx
+  [domain]
+      [slug]/
+          not-found.tsx
+          opengraph-image.tsx
+          page.tsx
+      layout.tsx
+      page.tsx
+```
+
 ## Contributing
 
 - [Start a discussion](https://github.com/vercel/platforms/discussions) with a question, piece of feedback, or idea you want to share with the team.
@@ -138,3 +166,4 @@ The MIT License.
 <a aria-label="Vercel logo" href="https://vercel.com">
   <img src="https://badgen.net/badge/icon/Made%20by%20Vercel?icon=zeit&label&color=black&labelColor=black">
 </a>
+```
